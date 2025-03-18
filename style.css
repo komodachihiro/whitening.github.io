@@ -837,18 +837,24 @@ h4 {
     text-align: left;
 }
 
-#order{
+#order {
     background-color: hsl(120, 72%, 41%);
-    max-width: 390px; /* 追加 */
+    background-image: 
+        radial-gradient(
+            circle at center,
+            hwb(69 29% 9% / 0.2) 2px,
+            transparent 2px
+        );
+    background-size: 15px 15px; /* 水玉の間隔 */
+    max-width: 390px;
     width: 100%;
     padding: 20px 25px;
     color: white;
     margin: 0 auto;
     text-align: center;
-    overflow: hidden; /* はみ出る部分を隠す */
-    position: relative; /* 位置の基準点を設定 */
+    overflow: hidden;
+    position: relative;
     padding-top: 40px;
-
 }
 
 h5{
