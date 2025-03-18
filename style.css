@@ -1,0 +1,881 @@
+/* 全体のリセット */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全体のコンテナ設定 */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央寄せ */
+}
+
+/* メインコンテンツのラッパー */
+.wrapper {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #ffffff;
+}
+
+/* ヘッダーのスタイル */
+#top {
+    background: url('img/top_back.png') no-repeat left top;
+    background-size: 100% auto;
+    position: relative;
+    width: 100%;
+    max-width: 390px; /* 追加 */
+    height: 520px;
+    margin: 0 auto; /* 追加 */
+}
+
+/* 左上にピンクの素材画像を配置 */
+#top::before {
+    content: "";
+    background: url('img/top_sozai.png') no-repeat left top;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+
+.top_box {
+    display: flex;
+    padding-top: 20px;
+}
+
+.top_box {
+    display: flex;
+    padding-top: 20px;
+}
+
+.button_list, .button_order {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    background-color: #EE3A2C;
+    line-height: 40px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button_list a, .button_order a {
+    color: white;
+    text-decoration: none;
+}
+
+.button_list a:hover, .button_order a:hover {
+    color: greenyellow;}
+
+h1 {
+    color: #EE3A2C;
+    font-size: 47px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    padding-left: 30px;
+}
+
+h2 {
+    color: #EE3A2C;
+    font-size: 21px;
+    letter-spacing: -1px;
+    padding-left: 30px;
+}
+
+h3 {
+    color: black;
+    font-size: 15px;
+    left: -2px;
+    letter-spacing: -1px;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-weight: 800;
+}
+
+h4 {
+    color: black;
+    font-size: 18px;
+    font-weight: 800;
+    left: -2px;
+    letter-spacing: -1px;
+    padding-left: 30px;
+}
+
+.point {
+    padding-right: 260px;
+}
+
+.top_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.point_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EE3A2C;
+    color: white;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    margin: 10px 30px;
+}
+
+.top_img img {
+    width: 420px; /* 110%から390pxに変更 */
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; /* 中央寄せ */
+}
+
+#top .top_img {
+    overflow: hidden;
+    position: relative;
+    top: -100px;
+    width: 420px; /* 幅を390pxに固定 */
+    display: block;
+    margin: 0 auto;
+}
+
+#survey {
+    background-color: #FFF5DB;
+    width: 100%;
+    max-width: 390px; /* 追加 */
+    padding: 20px 20px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden; /* はみ出る部分を隠す */
+    position: relative; /* 位置の基準点を設定 */
+}
+
+h5 {
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 35px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    color: #EE3A2C;
+    font-weight: 800;
+}
+
+/* 下向き三角 */
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #EE3A2C; /* 色は要調整 */
+    margin: 0px auto; /* 中央配置 */
+}
+.triangle-down02 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #EE3A2C; /* 色は要調整 */
+    margin: 5px auto; /* 中央配置 */
+}
+
+.question_01_box{
+    background-color: #2F4272;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.question_01_text {
+    font-size: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.question_01 img{
+    padding-top: 15px;
+}
+
+.question_02_box{
+    background-color: #2F4272;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.question_02_text {
+    font-size: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.question_02 img{
+    padding-top: 15px;
+}
+
+h6 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #2F4272;
+    padding-bottom: 10px;
+}
+
+.interest{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.interest_box{
+    margin: 0px 25px 0px 25px; /* 上 右 下 左 の順 */
+}
+
+.interest_box p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2F4272;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+.question_03_text {
+    font-size: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+/* アンケート商品リスト */
+.survey_button_list {
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    background-color: #EE3A2C;
+    line-height: 40px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.survey_button_list a {
+    color: white;
+    text-decoration: none;
+}
+
+.survey_button_list a:hover{
+    color: dimgrey;
+}
+
+
+/* 新感覚のホワイトニング */
+#life {
+    background-color: #EB6C76;
+    width: 100%;
+    max-width: 390px;
+    padding: 20px 25px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden; /* はみ出る部分を隠す */
+    position: relative; /* 位置の基準点を設定 */
+}
+
+h7 {
+    color: white;
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.life_title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.life_img01, .life_img02, .life_img03 {
+    padding-top: 20px;
+}
+
+.life_img01 p, .life_img02 p, {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.life_img03 p {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 30px;
+}
+
+/* POP特典のご案内 */
+#pop {
+    background-color: #F6D8D8;
+    width: 100%;
+    max-width: 390px;
+    padding: 20px 20px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden; /* はみ出た部分を隠す */
+    position: relative; /* 位置の基準点を設定 */
+}
+
+#pop img {
+    width: 110%;
+    height: auto;
+    display: block;
+    margin-left: -5%; /* 左右の中央配置を調整 */
+    margin-top: -100px
+    object-fit: cover; /* 画像のアスペクト比を保持 */
+}
+
+.pop_image img{
+    margin-top: -100px;
+ }
+
+.pop_web_box {
+    background-color: #2F4272; /* 青い枠線 */
+    border: 2px solid #fff;
+    border-radius: 8px; /* 角を丸める */
+    padding: 8px 28px; /* 内側の余白 */
+    width: 80%; /* または具体的な幅（例：300px） */
+    margin: 0 auto; /* 中央揃え */
+    display: inline-block; /* または display: block; */
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.pop_web_box p {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h8{
+    font-size: 31px;
+    font-weight: 800;
+    color: #2F4272;
+    padding-bottom: 0px;
+    letter-spacing: -1px;
+}
+
+.pop_text{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2F4272;
+    padding-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.original {
+    background-color: #2F4272; /* 青い背景 */
+    border: 2px solid white; /* 白い線 */
+    border-radius: 50%; /* 円形に */
+    width: 100px; /* 幅 */
+    height: 100px; /* 高さ */
+    display: flex; /* テキストを中央配置するため */
+    align-items: center; /* 垂直中央 */
+    justify-content: center; /* 水平中央 */
+    color: white; /* テキストを白に */
+    font-weight: bold; /* テキストを太く */
+    font-size: 16px; /* テキストサイズ */box-shadow: 0 0 10px rgba(0,0,0,0.2); /* 影をつける場合 */
+    transition: all 0.3s ease; /* ホバーエフェクトをつける場合 */
+    margin-left: 260px;
+}
+ 
+.original:hover {
+    transform: scale(1.05); /* ホバー時に少し大きく */
+}
+
+
+.pop_image02 p{
+    font-size: 25px;
+    font-weight: 900;
+    color: #2F4272;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+/* 商品紹介 */
+#list {
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+
+.fukidashi-01-04 {
+    position: relative;
+    width: 300px; /* fit-contentから固定幅に変更 */
+    padding: 12px 16px;
+    border-bottom: 2px solid #EE3A2C;
+    background-color: #ffffff;
+    margin: 0 auto; /* 中央配置 */
+    text-align: center; /* テキストを中央揃えにする場合 */
+}
+
+/* 他のスタイルは変更なし */
+.fukidashi-01-04::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    rotate: 135deg;
+    translate: -50%;
+}
+
+.fukidashi-01-04::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: calc(50% - 4px);
+    z-index: -1;
+    width: 30px;
+    height: 2px;
+    transform: rotate(50deg);
+    box-sizing: border-box;
+    background-color: #EE3A2C;
+    box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff;
+}
+ 
+.list_title{
+    font-size: 29px;
+    font-weight: 800;
+    color: #EE3A2C;
+}
+
+.list_title02{
+    padding-top: 10px;
+    letter-spacing: -1px;
+    font-size: 35px;
+    font-weight: 800;
+    color: #EE3A2C;
+}
+
+/* オパールエッセンス */
+.whitening01 img{
+    width: 75%;
+    height: auto;
+    margin-top: -50px;
+}
+
+.whitening_subtitle {
+    background-color: black; /* 赤色の背景 */
+    color: white; /* 文字色を白に */
+    border-radius: 5px; /* 角丸 */
+    padding: 5px 30px; /* 内側の余白 */
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block; /* または width: fit-content; */
+    margin: 20px auto; /* 上下余白と中央配置 */
+    letter-spacing: -1px;
+}
+
+/* 中央配置のために親要素が必要な場合 */
+.whitening_subtitle_container {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: -40px;
+    width: 100%;
+}
+
+.whitening01_title{
+    margin-top: -15px;
+    font-size: 25px;
+    font-weight: 900;
+    color: black;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.money{
+    font-size: 30px;
+    font-weight: 900;
+    color: #EE3A2C;
+    text-align: right;
+    margin-right: 40px;
+    margin-top: -20px;
+}
+
+.whitening01_text{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.whitening01_price{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.list_deta {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.list_deta button {
+    display: inline-block;
+    font-size: 20px;
+    background-color: #2F4272; /* ネイビー色の背景 */
+    color: white; /* 文字色 */
+    padding: 12px 90px; /* 内側の余白 */
+    border-radius: 5px; /* 角丸 */
+    border: none; /* ボーダーを消す */
+    font-weight: bold;
+    transition: all 0.3s ease; /* ホバーエフェクトのアニメーション */
+    cursor: pointer; /* カーソルをポインターに */
+    font-family: "Noto Sans JP", sans-serif; /* フォント */
+    position: relative; /* 疑似要素のために必要 */
+    overflow: hidden; /* グラデーションが溢れないように */
+}
+
+.list_deta button:hover {
+    opacity: 0.8; /* ホバー時に少し透明に */
+    transform: translateY(-2px); /* 少し上に浮かせる */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* 影をつける */
+}
+
+.list_deta button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff4b3c, #EE3A2C);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.list_deta button:hover::before {
+    opacity: 1;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    overflow: auto; /* モーダル全体でスクロール可能に */
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 40px auto; /* 上下の余白を追加 */
+    padding: 40px;
+    max-width: 390px;
+    overflow-y: auto; /* 内容が多いときスクロール可能に */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/* 閉じるボタンの装飾 */
+.close-button {
+    position: fixed; /* 固定配置 */
+    top: 40px; /* 上からの位置 */
+    right: calc(50% - 195px); /* モーダルの中央からの位置調整 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1001; /* モーダルより前面に */
+    background-color: #2F4272; /* ネイビー背景 */
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.close-icon {
+    font-size: 24px;
+    color: white;
+    line-height: 1;
+}
+
+.close-text {
+    color: white;
+    font-size: 12px;
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+/* ホバーエフェクト */
+.close-button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ユーチューブボタン装飾 */
+.youtube-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0;
+    color: #EE3A2C;
+}
+
+.youtube-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.youtube-button a {
+    display: inline-block;
+    background-color: #EE3A2C; /* 赤色の背景 */
+    color: white;
+    padding: 12px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ホバーエフェクト */
+.youtube-button a:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* グラデーションエフェクト */
+.youtube-button a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff4b3c, #EE3A2C);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.youtube-button a:hover::before {
+    opacity: 1;
+}
+
+/* ルシェロ歯磨きペースト */
+
+.whitening02{
+    padding-top: 40px;
+}
+
+.whitening02 img{
+    width: 60%;
+    height: auto;
+    margin-top: -20px;
+}
+
+.whitening02_care{
+    font-size: 20px;
+    font-weight: 900;
+    color: #EE3A2C;
+}
+
+h10{
+    font-size: 29px;
+    font-weight: 800;
+    color:#EE3A2C;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.whitening02_title{
+    font-size: 25px;
+    font-weight: 900;
+    color: #000;
+    text-align: left;
+    letter-spacing: -1px;
+    margin-left: 30px;
+}
+
+
+.whitening02_text{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.whitening02_price{
+    font-size: 15px;
+    font-weight: 700;
+}
+        
+/* W-10 */
+.whitening03{
+    padding-top: 40px;
+}
+
+h11 {
+    font-size: 29px;
+    font-weight: 800;
+    color: #EE3A2C;
+    letter-spacing: -1px;
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 2; /* 重なり順を上に */
+}
+
+.whitening03 img {
+    width: 40%;
+    height: auto;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1; /* 画像を下に */
+    margin-bottom: 30px;
+}
+
+.whitening03_title{
+    font-size: 25px;
+    font-weight: 900;
+    color: #000;
+    text-align: left;
+    letter-spacing: -1px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+.whitening03_text{
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 30px;
+    text-align: left;
+}
+
+#order{
+    background-color: green;
+    max-width: 390px; /* 追加 */
+    width: 100%;
+    max-width: 390px;
+    padding: 20px 25px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden; /* はみ出る部分を隠す */
+    position: relative; /* 位置の基準点を設定 */
+    padding-top: 40px;
+
+}
+
+h12{
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: -1px;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.triangle-down03 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white; /* 色は要調整 */
+    margin: 0px auto; /* 中央配置 */
+}
+.triangle-down04 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white; /* 色は要調整 */
+    margin: 5px auto; /* 中央配置 */
+}
+
+.order_text{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -1px;
+    padding-top: 15px;
+}
+
+
+/* PC表示用のメディアクエリ */
+@media screen and (min-width: 391px) {
+    body {
+        background-color: #fff; /* 背景色をつけて視認性を高める（オプション） */
+    }
+
+    .wrapper {}
+}
+
+/* whitening03用の大きいサイズのモーダル */
+.modal-content-large {
+    max-width: 450px; /* より大きな最大幅 */
+    padding: 15px; /* パディングを少し小さく */
+}
+
+.modal-content-large img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* スマートフォン対応 */
+@media screen and (max-width: 480px) {
+    .modal-content-large {
+        max-width: 95%; /* 画面幅に対する割合 */
+        margin: 10px auto;
+    }
+}
+
