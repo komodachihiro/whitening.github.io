@@ -161,6 +161,7 @@ h2 {
     margin: 0 auto;
 }
 
+/* ホワイトニングアンケート */
 #survey {
     background-color: #FFF5DB;
     width: 100%;
@@ -219,6 +220,19 @@ h3 {
     padding-bottom: 20px;
 }
 
+/* フェードイン用の基本スタイル */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+
+/* フェードイン時のスタイル */
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .question_01 img{
     padding-top: 15px;
 }
@@ -238,8 +252,33 @@ h3 {
 
 .question_02_text {
     font-size: 10px;
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 50px;
+}
+
+
+
+.question_02_text02 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #2F4272;
+    text-align: center;
+    margin: 30px auto; /* 左右のマージンをautoに変更 */
+    line-height: 1.4;
+    position: relative;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.0);
+    max-width: 320px; /* 最大幅を設定 */
+    width: 90%; /* スマホ表示時の余白確保 */
+}
+
+/* 数字部分の強調 */
+.question_02_text02 strong {
+    font-size: 130%;
+    color: #EE3A2C; /* 赤色で強調 */
+    background: linear-gradient(transparent 70%, rgba(238, 58, 44, 0.2) 40%); /* 下線マーカー */
 }
 
 .question_02 img{
@@ -885,12 +924,18 @@ h5{
     margin: 5px auto; /* 中央配置 */
 }
 
-.order_text{
-    font-size: 25px;
-    font-weight: 700;
-    color: white;
-    letter-spacing: -1px;
-    padding-top: 15px;
+.order_text {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+}
+
+.order_text.active {
+    opacity: 2;
+    transform: translateY(0);
 }
 
 .line_sumaho{
